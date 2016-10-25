@@ -1,0 +1,26 @@
+<!-- update this page for login -->
+
+<html>
+<head>
+	<title>Sign Up</title>
+	<link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="javascripts/script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>My Message</h1>
+	</header>
+	<div class="login-form">
+		<h2>Login</h2>
+		<p id="error-msg"></p>
+		<form id="form" method="GET">
+			<label for="username">Username:</label>
+			<input type="text" name="username" id="username" />
+			<label for="password1">Password:</label>
+			<input type="password" name="password" id="password1" />
+			<input onclick="login()" type="button" class="button" value="submit"/>
+		</form>
+	</div>
+</body>
+</html>

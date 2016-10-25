@@ -2,6 +2,8 @@
 <head>
 	<title>Sign Up</title>
 	<link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="javascripts/script.js"></script>
 </head>
 <body>
 	<header>
@@ -9,11 +11,11 @@
 	</header>
 	<div class="signup-form">
 		<h2>Sign Up</h2>
-		<form method="GET" action="message.html">
+		<form id="form" method="GET" onsubmit="signUp()" action="message.html">
 			<label for="username">Username:</label>
-			<input type="text" id="username" />
+			<input type="text" name="username" id="username" />
 			<label for="password1">Password:</label>
-			<input type="password" id="password1" />
+			<input type="password" name="password" id="password1" />
 			<label for="password2">Confirm Password:</label>
 			<input type="password" id="password2" />
 			<input type="submit" class="button" />
